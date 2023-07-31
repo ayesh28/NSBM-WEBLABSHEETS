@@ -1,0 +1,28 @@
+<html>
+<head>
+  <title>Tutorial 7</title>
+</head>
+<body>
+  <script>
+    window.onload = function() {
+      getMarks();
+    };
+
+    function getMarks() {
+      var total = 0;
+      var marks = [];
+
+      for (var x = 0; x < 5; x++) {
+        var input = parseInt(prompt("Enter Number"));
+        marks.push(input);
+        total += input;
+      }
+
+      var avg = total / marks.length;
+
+      document.write("Total is " + total + "<br>");
+      document.write("Average is " + avg);
+    }
+  </script>
+</body>
+</html>

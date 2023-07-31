@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Math Operations</title>
+</head>
+<body>
+  <h1>Math Operations</h1>
+
+  <script>
+    // Function to perform addition
+    function add(a, b) {
+      return a + b;
+    }
+
+    // Function to perform subtraction
+    function subtract(a, b) {
+      return a - b;
+    }
+
+    // Function to perform division
+    function divide(a, b) {
+      return a / b;
+    }
+
+    // Function to perform multiplication
+    function multiply(a, b) {
+      return a * b;
+    }
+
+    // Main function to execute the program
+    function main() {
+      const num1 = parseFloat(prompt("Enter the first number:"));
+      const num2 = parseFloat(prompt("Enter the second number:"));
+
+      const additionResult = add(num1, num2);
+      const subtractionResult = subtract(num1, num2);
+      const divisionResult = divide(num1, num2);
+      const multiplicationResult = multiply(num1, num2);
+
+      alert(`Addition: ${additionResult}\nSubtraction: ${subtractionResult}\nDivision: ${divisionResult}\nMultiplication: ${multiplicationResult}`);
+    }
+
+    // Call the main function to run the program
+    main();
+  </script>
+</body>
+</html>
